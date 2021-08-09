@@ -42,7 +42,8 @@ if ($conn->connect_error) {
         $subject2=$_POST['subject2'];
         $subject3=$_POST['subject3'];
 
-        $sql = "INSERT INTO Result(name,subject1,subject2,subject3) VALUES('$name',$subject1,$subject2,$subject3)";
+        $sql = "INSERT INTO Result(name,subject1,subject2,subject3) 
+        VALUES('$name',$subject1,$subject2,$subject3)";
         // echo $sql;
         if ($conn->query($sql) == TRUE) {
             echo "<p>record is inserted</p>";
