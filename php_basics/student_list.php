@@ -41,8 +41,6 @@
                     <th>Marks</th>
                 </thead>
             <tbody>
-                
-            
             ";
             while ($row = $result->fetch_assoc()) {
 
